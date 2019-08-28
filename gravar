@@ -1,0 +1,458 @@
+Laboratório de Computação I
+IFPR
+
+Isaac Nicholas
+Filtros
+Atribuída
+Devolvidas com nota
+Pendente
+Título
+Data de entrega
+Exercício - Problema do Contador para Resolver com Matrizes
+1
+1 anexo para enviar
+3 de jun
+Devolvidos
+Trabalho Final
+1
+1 anexo para enviar
+23 de jun 23:59
+Devolvidos
+
+trabalho-final-isaac.cpp
+C++
+Exercício - Problema do fatorial duplo
+1
+1 anexo para enviar
+12 de mai
+Devolvidos
+Exercício - Problema da conversão graus Celsius e Farenheit
+1
+1 anexo para enviar
+12 de mai
+Devolvidos
+Exercício - Problema da escrita do pinheiro
+1
+1 anexo para enviar
+6 de mai
+Devolvidos
+Exercício - Problema da tabelas ascii - GO TO
+1
+1 anexo para enviar
+30 de abr
+Devolvidos
+Exercício - Problema da tabela ascii - DO WHILE
+1
+1 anexo para enviar
+30 de abr
+Devolvidos
+Exercício: Problema da tabela ascii - While
+1
+1 anexo para enviar
+30 de abr
+Devolvidos
+Exercício - Problema da Tabela Ascii - FOR
+1
+1 anexo para enviar
+30 de abr
+Devolvidos
+Exercício - Problema do crescimento entre pessoas
+2
+2 anexos para enviar
+29 de abr
+Devolvidos
+Exercício - Problema do teste de mesa - For aninhado
+16 de abr
+Pendente
+Exercício - Problema do prêmio em site
+9 de abr
+Pendente
+Exercício - Problema do Salário
+1
+1 anexo para enviar
+8 de abr 12:00
+Devolvidos
+Exercício - Problema da idade da pessoa
+1
+1 anexo para enviar
+8 de abr 12:00
+Devolvidos
+Exercício - Problema da Aprovação do Aluno
+1
+1 anexo para enviar
+8 de abr 12:00
+Devolvidos
+Exercício - Problema do DDD do telefone
+1
+1 anexo para enviar
+2 de abr
+Devolvidos
+Exercício - Problema dos maior entre três números
+1
+1 anexo para enviar
+2 de abr
+Devolvidos
+Exercício - Problema do desconto na venda de produto
+1
+1 anexo para enviar
+26 de mar
+Devolvidos
+Concluída com atraso
+Exercício - Problema das operações e operadores
+1
+1 anexo para enviar
+26 de mar
+Devolvidos
+Concluída com atraso
+Exercício - Problema do valor médio de produtos
+1
+1 anexo para enviar
+26 de mar
+Devolvidos
+Concluída com atraso
+Exercício - Problema da área do quadrado
+1
+1 anexo para enviar
+26 de mar
+Devolvidos
+Concluída com atraso
+Exercício - Problema do Cadastro de Pessoa
+26 de mar
+Pendente
+Exercício - Problema do preço de venda para produto com IRF
+20 de mar
+Pendente
+Exercício - Problema da média do aluno
+20 de mar
+Pendente
+Seus trabalhos em Laboratório de Computação I
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#define tm 200
+struct {
+	int data;
+	int qtd;
+	float vlt;
+	int n;
+	int vv;
+
+}venda;
+struct {
+	char desc[tm];
+	int codigo;
+	float valor;
+}produto;
+struct {
+	char nome[tm];
+	int codigo;
+	char cpf[13];
+}cliente;
+
+	
+void cc();
+
+
+void cc (){
+FILE *f;
+if (f == NULL){
+		printf ("Arquivo não pode ser aberto!\n");
+		system ("pause");
+		exit(0);
+}
+	printf ("Digite o nome: \n");
+		fflush(stdin);
+	gets(cliente.nome);
+		
+	printf ("Digite o código: \n");
+	scanf ("%d", &cliente.codigo);
+	
+	printf ("Digite o CPF: \n");
+		fflush(stdin);
+	gets(cliente.cpf);
+
+	f = fopen ("cliente.txt", "a");
+	fprintf (f, "Nome: %s\n", &cliente.nome);
+	fprintf (f, "Codigo: %d\n", cliente.codigo);
+	fprintf (f, "CPF: %s\n", &cliente.cpf);
+	fclose(f);
+
+
+}
+
+void lc(){
+	FILE *f;
+	char df[100];
+	f = fopen("cliente.txt", "r");
+	if (f == NULL){
+		printf ("Arquivo não pode ser aberto!\n");
+		system ("pause");
+		exit(0);
+}
+
+	while (fgets(df, 100, f) != NULL){
+	fscanf (f, "Nome: %s\n", &cliente.nome);
+	
+	fscanf (f, "Codigo: %d\n", &cliente.codigo);
+	
+	fscanf (f, "CPF: %s\n", &cliente.cpf);
+	
+	printf ("%s",df);
+	printf ("Codigo: %d\n", cliente.codigo);
+	printf ("CPF: %s\n", cliente.cpf);
+
+
+	}
+
+	fclose(f);
+
+	
+	}
+
+
+void cp (){
+FILE *fp;
+if (fp == NULL){
+		printf ("Arquivo não pode ser aberto!\n");
+		system ("pause");
+		exit(0);
+}
+	printf ("Digite a descrição: \n");
+		fflush(stdin);
+	gets(produto.desc);
+		
+	printf ("Digite o código: \n");
+	scanf ("%d", &produto.codigo);
+	
+	printf ("Digite o Valor: \n");
+	scanf("%f", &produto.valor);
+
+	fp = fopen ("prod.txt", "a");
+	fprintf (fp, "Descrição: %s\n", &produto.desc);
+	fprintf (fp, "Codigo: %d\n", produto.codigo);
+	fprintf (fp, "Valor: %f\n", produto.valor);
+	fclose(fp);
+
+
+}
+
+void lp(){
+	FILE *fp;
+	char df[100];
+	fp = fopen("prod.txt", "r");
+	if (fp == NULL){
+		printf ("Arquivo não pode ser aberto!\n");
+		system ("pause");
+		exit(0);
+}
+
+	while (fgets(df, 100, fp) != NULL){
+	fscanf (fp, "Descrição: %s\n", &produto.desc);
+	
+	fscanf (fp, "Codigo: %d\n", &produto.codigo);
+	
+	fscanf (fp, "Valor: %f\n", &produto.valor);
+	
+	printf ("%s",df);
+	printf ("Codigo: %d\n", produto.codigo);
+	printf ("Valor: %f\n", produto.valor);
+
+
+	}
+
+	fclose(fp);
+
+	
+	}
+
+void cv(){
+	FILE *f;
+ FILE *fp;
+ FILE *cv;
+ if ( cv == NULL){
+ 	printf ("Arquivo não pode ser aberto!\n");
+		system ("pause");
+		exit(0);
+ }
+	char df[100];
+	cv = fopen("venda.txt","a");
+	printf ("Digite a data: \n");
+	scanf ("%d", &venda.data);
+	f = fopen ("cliente.txt", "r");
+	printf ("Digite o codigo do cliente: \n");
+	scanf ("%d", &venda.vv);
+	while(fgets(df,100, f) !=NULL){
+		fscanf (f, "Codigo: %d\n", &cliente.codigo);
+		venda.vv <- cliente.codigo;
+		
+}
+	if (venda.vv == cliente.codigo){
+		printf ("Codigo cliente: %d\n", venda.vv);
+			}else {
+		printf ("Cliente não cadastrado!\n");
+	}
+	
+	fp = fopen("prod.txt" ,"r");
+	printf ("Digite o codigo do produto: \n");
+	scanf ("%d", &venda.n);
+	
+	
+	while(fgets(df,100, fp) !=NULL){
+	fscanf (fp, "Codigo: %d\n", &produto.codigo);
+	fscanf (fp, "Valor: %f\n", &produto.valor);
+	venda.n <- produto.codigo;
+	}
+	
+	if (venda.n == produto.codigo){
+	printf ("Codigo: %d\n", venda.n);
+	printf ("Valor: %2.f\n", produto.valor);
+	printf("Digite a quantidade: \n");
+	scanf ("%d", &venda.qtd);
+	venda.vlt = produto.valor * venda.qtd;
+	printf ("Valor total: %f\n", venda.vlt);
+	} else {
+		printf ("Produto não cadastrado!\n");
+	}
+	fprintf (cv, "Data: %d\n", venda.data);
+	fprintf (cv, "Código cliente: %d\n", venda.vv);
+	fprintf (cv, "Código Produto: %d\n", venda.n);
+	fprintf (cv, "Quantidade: %d\n", venda.qtd);
+	fprintf (cv ,"Valor total: %f\n", venda.vlt);
+	fclose(f);
+	fclose(fp);
+	fclose(cv);
+	}
+void ccv(){
+	FILE *cv;
+	char df[100];
+	cv = fopen("venda.txt", "r");
+	if (cv == NULL){
+		printf ("Arquivo não pode ser aberto!\n");
+		system ("pause");
+		exit(0);
+}
+	while (fgets(df, 100, cv) != NULL){
+	
+		printf ("%s",df);
+		
+		
+	
+}
+	fclose(cv);
+
+	
+		
+}
+int main (){
+FILE *f;
+	setlocale (LC_ALL, "Portuguese");
+ 	int menu;
+ 	int d;
+ 	char at[15];
+ 	system ("COLOR 1B");
+ 	printf ("Qual seu nome?\n");
+ 	fflush (stdin);
+ 	gets(at);
+ 	printf ("Seja bem--vindo %s ao menu!\n", at);
+	menu:
+ 	printf ("==== Menu =====\n");
+ 	printf ("1 - Cadastrar Cliente\n");
+ 	printf ("2 - Listar Clientes\n");
+ 	printf ("3 - Cadastrar Produto\n");
+ 	printf ("4 - Listar Produtos\n");
+ 	printf ("5 - Cadastrar Vendas\n");
+ 	printf ("6 - Listar Vendas\n");
+ 	printf ("7 - Sair.\n");
+ 	printf ("Escolha uma opção\n");
+	 scanf("%d", &menu);
+	  	switch (menu){
+	  	
+ 		case 1: 
+		 	system("cls");
+	  	printf ("Cadastrando Cliente!\n");
+		 cc();
+		 printf ("Deseja voltar ao menu? [1] Sim [0]Não");
+		 scanf ("%d", &d);
+		 if (d == 1){
+		 	goto menu;
+		 }
+		  else {
+		 exit(0);
+		 }
+		 break;
+ 		case 2: 		 
+ 		system("cls");
+ 		printf ("Listando Clientes!\n");
+			lc();
+ 		 
+		 printf ("Deseja voltar ao menu? [1] Sim [0]Não");
+		 scanf ("%d", &d);
+		 if (d == 1){
+		 	goto menu;
+		 }
+		  else {
+		 exit(0);
+		 }
+		 
+		 break;
+
+ 			case 3:
+ 				cp();
+ 				
+		 printf ("Deseja voltar ao menu? [1] Sim [0]Não");
+		 scanf ("%d", &d);
+		 if (d == 1){
+		 	goto menu;
+		 }
+		  else {
+		 exit(0);
+		 }
+ 				break;
+ 				case 4:
+ 					lp();
+ 					
+		 printf ("Deseja voltar ao menu? [1] Sim [0]Não");
+		 scanf ("%d", &d);
+		 if (d == 1){
+		 	goto menu;
+		 }
+		  else {
+		 exit(0);
+		 }
+ 					break;
+ 					case 5:
+ 						cv();
+ 						
+		 printf ("Deseja voltar ao menu? [1] Sim [0]Não");
+		 scanf ("%d", &d);
+		 if (d == 1){
+		 	goto menu;
+		 }
+		  else {
+		 exit(0);
+		 }
+ 						break;
+ 						case 6:
+ 						ccv();
+ 						
+		 printf ("Deseja voltar ao menu? [1] Sim [0]Não");
+		 scanf ("%d", &d);
+		 if (d == 1){
+		 	goto menu;
+		 }
+		  else {
+		 exit(0);
+		 }
+ 						break;
+ 						case 7: exit(0);
+ 						break;
+	 }
+
+	
+
+	system  ("pause");
+	return 0;
+}
+trabalho-final-isaac.cpp
+Exibindo trabalho-final-isaac.cpp.
