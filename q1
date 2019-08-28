@@ -1,0 +1,32 @@
+//Questao 1
+//Isaac Nicholas Fonseca de Oliveira
+//TADS 2019
+algoritmo
+declare v[10], verif, i, x numerico
+	para i <- 1 ate 10 faca
+	inicio
+		escreva "Insira o " ,i," � valor"
+	leia v[i]
+	fim
+	escreva "Qual valor deseja procurar?"
+	leia x
+	inicio
+	para i<- 1  ate 10 faca
+	inicio
+	se x = v[i]
+ entao
+	verif <- x
+	
+fim
+	
+	fim
+	se verif = x entao
+	inicio
+		escreva "ACHEI"
+		fim
+	senao
+	inicio
+			escreva "N�O ACHEI"
+	fim
+	
+fim_algoritmo
