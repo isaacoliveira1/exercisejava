@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+int fat(int nu)
+{
+	int i, fat;
+	i=1;
+	fat=1;
+	if (nu %2 == 0 || nu < 0){
+		printf("Numero invalido");
+		return 0;
+	}
+	else if (nu % 2 !=0){
+		while( i < nu){
+			i+=2;
+			fat *= i;			
+		}
+	}
+	printf("Fatorial  duplo: %d", fat);
+	return(nu);
+}
+int main(){
+	int nu;
+	printf("Digite um numero impar: ");
+	scanf("%d", &nu);
+	fat(nu);
+}
