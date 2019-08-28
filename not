@@ -1,0 +1,22 @@
+algoritmo
+declare nota[10], aprov, reprov, i, j numerico
+para i <- 1 ate 10 faca
+inicio
+	escreva "Digite a nota do aluno", i
+	leia nota[i]
+	fim
+	j <- i
+para j<- 1 ate 10 faca
+inicio
+	se nota[j] >= 6 entao
+	inicio
+		aprov <- aprov+ 1
+		
+	fim
+	senao
+	inicio
+	reprov <- reprov + 1
+	fim
+fim
+escreva "Aprovados " , aprov, " Reprovados " , reprov
+fim_algoritmo
