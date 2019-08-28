@@ -1,0 +1,11 @@
+package Atributos;
+
+public class RecipienteAct {
+
+	public static void main(String[] args) {
+
+		Recipiente r = new Recipiente ()
+
+	}
+
+}

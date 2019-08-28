@@ -1,0 +1,29 @@
+package Shop;
+
+public class Venda {
+	private int codigo;
+	private String dataVenda;
+	private double totalVenda;
+	
+	public Venda() {
+		
+	}
+	public Venda (int codigo, String dataVenda, double totalVenda) {
+		this.codigo = codigo;
+		this.dataVenda = dataVenda;
+		this.totalVenda = totalVenda;
+	}
+	public void setcodigo(int codigo) {
+		this.codigo = codigo;
+	}
+		public int getcodigo () {
+			return this.codigo;
+		}
+			public void setdataVenda(String dataVenda) {
+				this.dataVenda = dataVenda;
+			}
+				public String getdataVenda(String) {
+					return this.dataVenda;
+				}
+				
+			}

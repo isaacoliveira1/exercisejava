@@ -1,0 +1,14 @@
+package Atributos;
+
+public class LampadaAct {
+	public static void main(String[] args) {
+		Lampada l = new Lampada();
+
+		l.setestado(true);
+		System.out.println("Ligando a lampada!");try { Thread.sleep (1000); } catch (InterruptedException ex) {}
+				System.out.println("Estado: " +l.getestado());
+			l.alteraestado(false);
+			System.out.println("Desligando a lampada!"); try { Thread.sleep (1000); } catch (InterruptedException ex) {}
+		System.out.println("Estado: " +l.getestado());
+	}
+}

@@ -1,0 +1,14 @@
+package Atributos;
+
+public class LampadaAct {
+	public static void main(String[] args) {
+		Lampada l = new Lampada();
+		if (1 == 1) {
+			l.setestado(true);
+		}
+		
+		l.alteraestado(false);
+		
+		System.out.println("Estado: " +l.getestado());
+	}
+}

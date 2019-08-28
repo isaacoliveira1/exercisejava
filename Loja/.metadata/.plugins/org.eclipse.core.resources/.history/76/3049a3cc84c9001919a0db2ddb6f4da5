@@ -1,0 +1,23 @@
+package Shop;
+
+public class ClienteAct {
+
+	public static void main(String[] args) {
+		Cliente cli = new Cliente ("Evandro", "evandrin@gmail.com", 1, 99898435);
+		System.out.println("Nome:" + cli.getnome()+ 
+				"\nEmail: " + cli.getemail()+ 
+				"\nCódigo: "+ cli.getcodigo()+ 
+				"\nTelefone: " + cli.getfone());
+		
+		Cliente cli1 = new Cliente();
+		cli1.nome1 = "Carlos";
+		cli1.email1 = "carlos1268@gmail.com";
+		cli1.codigo1 = 3;
+		cli1.fone1 = 98340987;
+		cli1.imprimir();
+			
+		
+
+	}
+
+}

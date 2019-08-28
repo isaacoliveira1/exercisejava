@@ -1,0 +1,16 @@
+package Shop;
+
+public class Venda {
+	private int codigo;
+	private String dataVenda;
+	private double totalVenda;
+	
+	public Venda() {
+		
+	}
+	public venda (int codigo, String dataVenda, double totalVenda) {
+		this.codigo = codigo;
+		this.dataVenda = dataVenda;
+		this.totalVenda = totalVenda;
+	}
+}

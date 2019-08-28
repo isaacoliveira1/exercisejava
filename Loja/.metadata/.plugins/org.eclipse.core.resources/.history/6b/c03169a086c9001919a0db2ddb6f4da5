@@ -1,0 +1,11 @@
+package Shop;
+
+public class VendaAct extends Venda {
+
+	public static void main(String[] args) {
+		Venda v1 = new Venda(3, "19_08_2017", 987);
+		
+		
+	}
+
+}

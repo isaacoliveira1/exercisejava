@@ -1,0 +1,38 @@
+package Shop;
+
+public class Venda {
+	private int codigo;
+	private String dataVenda;
+	private double totalVenda;
+	
+	public Venda() {
+		
+	}
+	public void imprimir() {
+		System.out.println("Código: " + codigo + "\nData da Venda: " + dataVenda + "\nTotal da Venda" + totalVenda);
+	}
+	public Venda (int codigo, String dataVenda, double totalVenda) {
+		this.codigo = codigo;
+		this.dataVenda = dataVenda;
+		this.totalVenda = totalVenda;
+	}
+	public void setcodigo(int codigo) {
+		this.codigo = codigo;
+	}
+		public int getcodigo () {
+			return this.codigo;
+		}
+			public void setdataVenda(String dataVenda) {
+				this.dataVenda = dataVenda;
+			}
+				public String getdataVenda() {
+					return this.dataVenda;
+				}
+					public void settotalVenda(double totalVenda) {
+						this.totalVenda = totalVenda;
+					}
+						public double gettotalVenda() {
+							return this.totalVenda;
+						}
+				
+			}
