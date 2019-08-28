@@ -1,20 +1,3 @@
-Laboratório de Computação I
-IFPR
-Data de entrega: 3 de jun
-Exercício - Problema do Contador para Resolver com Matrizes
-100 pontos
-
-Augusto Luengo
-28 de mai
-Faça um programa que leia 12 lançamentos de faturamento mensal para 5 empresas diferentes e encontre qual empresa (se 1, 2, 3, 4 ou 5) teve o menor faturamento anual. Na solução, você deve usar obrigatoriamente uma matriz 5x12, um vetor de 5 elementos e pelo menos três funções (para ler matriz, calcular faturamento anual, encontrar menor faturamento).
-Comentários da turma
-Seus trabalhos
-Devolvidos
-
-matriz.cpp
-C++
-Comentários particulares
-Exercício - Problema do Contador para Resolver com Matrizes
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
