@@ -1,0 +1,14 @@
+//Quest�o 2
+// Isaac Nicholas Fonseca de Oliveira
+// TADS - 2019
+algoritmo
+declare a[10], x, m , soma,i, j numerico
+para i <- 1 ate 10 faca
+inicio
+escreva "Insira o " , i , " � valor"
+leia a[i]
+x <- a[i]
+m <- a[i] * x
+escreva "O valor multiplicado � " , m
+fim
+fim_algoritmo
