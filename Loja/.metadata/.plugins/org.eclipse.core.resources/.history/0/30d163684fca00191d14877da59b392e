@@ -1,0 +1,24 @@
+package Atributos;
+
+public class CarroAct {
+	public static void main (String[] args) {
+		Carro c = new Carro("EFG-9834", "Honda", "Civic", "Preto", "Gasolina");
+			Carro c1 = new Carro ();
+				c1.setplaca("AHR-8734");
+				c1.setmodelo("Volkswagem");
+				c1.setmodelo("Gol");
+				c1.setcor("Vermelho");
+				c1.setcombustivel("Flex");
+				
+				Carro c2 = new Carro ();
+				c2.setplaca("TRJ-7843");
+				c2.setmodelo("Chevrolet");
+				c2.setmodelo("Cruze");
+				c2.setcor("Prata");
+				c2.setcombustivel("Gasolina");
+					
+		
+		
+		
+	}
+}

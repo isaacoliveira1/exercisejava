@@ -1,0 +1,12 @@
+package Atributos;
+
+public class ComputadorAct {
+	public static void main(String[] args) {
+		Computador c = new Computador(4, 2, 8, 500, 1);
+		Computador c1 = new Computador();
+		Computador c2 = new Computador();
+		
+		
+		
+	}
+}

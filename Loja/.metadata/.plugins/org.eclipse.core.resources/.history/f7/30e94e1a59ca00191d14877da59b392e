@@ -1,0 +1,15 @@
+package Atributos;
+
+public class VendaAct {
+
+	public static void main(String[] args) {
+		Venda v = new Venda("Paulo Dias", "23/08/2018", "13:52", 980);
+		
+		
+		
+		
+
+
+	}
+
+}

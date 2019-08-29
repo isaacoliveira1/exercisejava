@@ -1,0 +1,15 @@
+package Atributos;
+
+public class RemedioAct {
+	public static void main(String[] args) {
+		Remedio r = new Remedio("Omeprazol", "Genérico", 2, 8);
+		Remedio r1 = new Remedio();
+		Remedio r2 = new Remedio();
+		
+		r1.setnome("Ibuprofeno");
+		r1.settipo("Simples");
+		r1.setdose(4);
+		r1.setperiodicidade(12);
+		
+	}
+}

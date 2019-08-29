@@ -1,0 +1,8 @@
+package Atributos;
+
+public class ComputadorAct {
+	public static void main(String[] args) {
+		
+		
+	}
+}

@@ -1,0 +1,23 @@
+package Atributos;
+
+public class ComputadorAct {
+	public static void main(String[] args) {
+		Computador c = new Computador(2.83, 2, 8, 500, 1);
+		Computador c1 = new Computador();
+		Computador c2 = new Computador();
+		
+		c1.setpr(3.24);
+		c1.setn(3);
+		c1.setm(16);
+		c1.seth(1000);
+		c1.sett(3);
+		c1.setpr(4.32);
+		c1.setn(8);
+		c1.setm(32);
+		c1.seth(2000);
+		c1.sett(5);
+		
+		
+		
+	}
+}

@@ -1,6 +1,7 @@
 package Shop;
 
-public class Produto {
+public class Produto
+ {
 	private int codigo;
 	private String desc;
 	private int est;

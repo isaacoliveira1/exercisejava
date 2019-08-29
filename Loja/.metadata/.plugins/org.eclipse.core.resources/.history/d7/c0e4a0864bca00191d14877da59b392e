@@ -1,0 +1,22 @@
+package Atributos;
+
+public class ProdutoAct {
+
+	public static void main(String[] args) {
+		Produto p = new Produto();
+		p.setcod(331);
+		p.setdesc("Perfume");
+		p.setest(130);
+		p.setpreco(59.99);
+		Produto p1 = new Produto();
+		p1.setcod(233);
+		p1.setdesc("Mouse Pad");
+		p1.setest(103);
+		p1.setpreco(19.99);
+		p.getcodigo();
+		p.getdesc();
+		p.getest();
+		p.getpreco();
+	}
+
+}

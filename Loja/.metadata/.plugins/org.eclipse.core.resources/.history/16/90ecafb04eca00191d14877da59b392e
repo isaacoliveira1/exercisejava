@@ -1,0 +1,11 @@
+package Atributos;
+
+public class CarroAct {
+	public static void main (String[] args) {
+		Carro c = new Carro("EFG-9834", "Honda", "Civic", "Preto", "Gasolina")
+				
+		
+		
+		
+	}
+}

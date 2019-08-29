@@ -1,0 +1,33 @@
+package Atributos;
+
+public class ContaCorrenteAct {
+
+	public static void main(String[] args) {
+		ContaCorrente c = new ContaCorrente(698, 3560, "299010-5", 15841);
+		ContaCorrente c1 = new ContaCorrente();
+		ContaCorrente c2 = new ContaCorrente();
+		c1.setbanco(312);
+		c1.setagencia(3001);
+		c1.setconta("1278849-5");
+		c1.setsaldo(1093874);
+		c2.setbanco(984);
+		c2.setagencia(6001);
+		c2.setconta("89928-0");
+		System.out.println("Banco: " + c.getbanco());
+		System.out.println("Agência: " + c.getagencia());
+		System.out.println("Conta: "+ c.getconta());
+		System.out.println("Saldo: "+ c.getsaldo());
+		System.out.println();
+		System.out.println("Banco: " + c1.getbanco());
+		System.out.println("Agência: " + c1.getagencia());
+		System.out.println("Conta: "+ c1.getconta());
+		System.out.println("Saldo: "+ c1.getsaldo());
+		System.out.println();
+		System.out.println("Banco: " + c2.getbanco());
+		System.out.println("Agência: " + c2.getagencia());
+		System.out.println("Conta: "+ c2.getconta());
+		System.out.println("Saldo: "_+ c2.getsaldo());
+		
+	}
+
+}

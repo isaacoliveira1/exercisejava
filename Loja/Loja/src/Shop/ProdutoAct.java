@@ -1,6 +1,6 @@
 package Shop;
 
-public class ProdutoAct extends Produto {
+public class ProdutoAct {
 
 	public static void main(String[] args) {
 	Produto p = new Produto(1, "Fones de Ouvido", 500, 10.99);

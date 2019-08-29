@@ -1,0 +1,29 @@
+package Atributos;
+
+public class Carro {
+	private String placa;
+	private String marca;
+	private String modelo;
+	private String cor;
+	private String combustivel;
+	
+	public Carro (String placa, String marca, String modelo, String cor, String combustivel) {
+		this.placa = placa;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.combustivel = combustivel;
+		
+	}
+	
+	public Carro () {
+		
+	}
+		public void getplaca(String placa) {
+			return this.placa;
+		}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,35 @@
+package Atributos;
+
+public class PacienteAct {
+
+	public static void main(String[] args) {
+		Paciente p = new Paciente ("Andrade Pereira", 58, 1.75, "O+");
+		Paciente p1 = new Paciente();
+		p1.setnome("Carlos Henrique");
+		p1.setpeso(90);
+		p1.setaltura(1.91);
+		p1.settiposangue("A-");
+		Paciente p2 = new Paciente();
+		p2.setnome("Afonso Padilha");
+		p2.setpeso(74);
+		p2.setaltura(1.62);
+		p2.settiposangue("A+");
+		
+		System.out.println("Nome: " + p.getnome());
+		System.out.println("Peso: "+ p.getpeso());
+		System.out.println("Altura: "+ p.getaltura());
+		System.out.println("Tipo de Sangue: "+ p.gettiposangue());
+		System.out.println();
+		System.out.println("Nome: " + p1.getnome());
+		System.out.println("Peso: "+ p1.getpeso());
+		System.out.println("Altura: "+ p1.getaltura());
+		System.out.println("Tipo de Sangue: "+ p1.gettiposangue());
+		System.out.println();
+		System.out.println("Nome: " + p2.getnome());
+		System.out.println("Peso: "+ p2.getpeso());
+		System.out.println("Altura: "+ p2.getaltura());
+		System.out.println("Tipo de Sangue: "+ p2.gettiposangue());
+		
+	}
+
+}

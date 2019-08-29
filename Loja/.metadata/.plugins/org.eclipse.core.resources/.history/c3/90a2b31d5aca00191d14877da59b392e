@@ -1,0 +1,20 @@
+package Atributos;
+
+public class ContaCorrente {
+	private int banco;
+	private int agencia;
+	private String conta;
+	private double saldo;
+	
+	public ContaCorrente(int banco, int agencia, String conta, double saldo) {
+		this.banco = banco;
+		this.agencia = agencia;
+		this.conta = conta;
+		this.saldo = saldo;
+	}
+	public ContaCorrente() {
+		
+	}
+	
+	
+}

@@ -1,0 +1,20 @@
+package Atributos;
+
+public class ClientAct {
+
+	public static void main(String[] args) {
+		Cliente c = new Cliente("Henrique Eduardo", "henrique983@gmail.com", 345, 98759843);
+		Cliente c1 = new Cliente();
+		Cliente c2 = new Cliente();
+		c1.setnome("Bethoven Kyen");
+		c1.setemail("bethokyen@hotmail.com");
+		c1.setcodigo(98);
+		c1.setfone(98437654);
+		c2.setnome("Pedro Horte");
+		c2.setemail("darthvader2398@hotmail.com");
+		c2.setcodigo(367);
+		c2.setfone(94342387);
+		
+	}
+
+}

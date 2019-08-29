@@ -1,0 +1,16 @@
+package Atributos;
+
+public class Venda {
+	private String cliente;
+	private String data;
+	private String hora;
+	private double total;
+	
+	public Venda(String cliente, String data, String hora, double total) {
+		this.cliente = cliente;
+		this.data = data;
+		this.hora = hora;
+		this.total = total;
+	}
+	
+}

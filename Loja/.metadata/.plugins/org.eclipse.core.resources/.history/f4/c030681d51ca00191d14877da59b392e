@@ -1,0 +1,12 @@
+package Atributos;
+
+public class MultaAct {
+
+	public static void main(String[] args) {
+			
+			Multa m = new Multa("FGH-0938", "Gravissima", "23/07/2017", "05/09/2017");
+			
+		
+	}
+
+}
